@@ -11,8 +11,15 @@ class User:
         self.username = username
         self.age = age
         self.phone = phone
+    def __str__(self):
+        return (f"Информация о пользователе: {self.name}, {self.username}, {self.age}, {self.phone}")
 
+def main():
+    egor = User("Егор", "egor", 19, "8-666-666-96-69")
+    print(egor)
+    return 0
 
 if __name__ == '__main__':
-    pass  # код писать тут
+    res = main()
+    exit(res)
 
