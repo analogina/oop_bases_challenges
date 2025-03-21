@@ -16,7 +16,13 @@ class Student:
     def get_full_name(self):
         return f"Student's full name: {self.surname}, {self.name}"
 
+def main():
+    egor = Student("Егор", "Егорович", "механик", 3)
+    info = egor.get_full_name()
+    print(info)
+    return 0
 
 if __name__ == '__main__':
-    pass  # код писать тут
+    res = main()
+    exit(res)
 

@@ -16,7 +16,8 @@ class User:
 
 def main():
     egor = User("Егор", "egor", 19, "8-666-666-96-69")
-    print(egor)
+    # lena = User("Лена", "lena", 40, "8 800 200 25 25")
+    # print(f"{egor} & {lena}")
     return 0
 
 if __name__ == '__main__':
