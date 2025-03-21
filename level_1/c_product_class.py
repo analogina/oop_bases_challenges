@@ -9,8 +9,21 @@
 
 
 class Product:
-    pass  # код писать тут
+    def __init__(self, p_name: str, p_type: str, price: int, mass: int):
+        self.p_name = p_name
+        self.p_type = p_type
+        self.price = price
+        self.mass = mass
+    def __str__(self):
+        return(f"{self.p_name}, {self.p_type}, {self.price}, {self.mass}")
 
+
+def main():
+    kokokola = Product("Ко-ко-ко-ла", "напиток", 100, 500)
+    print(kokokola)
+    # print(f"price of kokokola is {kokokola.price}")
+    return 0
 
 if __name__ == '__main__':
-    pass  # код писать тут
+    res = main()
+    exit(res)
